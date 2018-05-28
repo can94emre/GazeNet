@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAfterLogin.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="width:1100px;margin:0 auto">
+      
+        <tr style="width:1100px;height:40px;background-color:black">
+            <td colspan="3">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal"  OnMenuItemClick="Menu1_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem Text="About" Value="About"></asp:MenuItem>
+                        <asp:MenuItem Text="Galery" Value="Galery"></asp:MenuItem>
+                        <asp:MenuItem Text="Contact Us" Value="Contact Us"></asp:MenuItem>
+                        <asp:MenuItem Text="Survey" Value="Survey"></asp:MenuItem>
+                        <asp:MenuItem Text="Manage" Value="Manage"></asp:MenuItem>
+                         <asp:MenuItem Text="Log out" Value="Log out"></asp:MenuItem>
+                         
+                    </Items>
+                     
+                    <StaticHoverStyle BackColor="Gray" ForeColor="White" />
+                    <StaticMenuItemStyle ForeColor="White" HorizontalPadding="30px" Font-Size="Large" />
+                </asp:Menu>
+                <div style="align-items:center; margin-left:23px" >        
+                    
+                    <br />
+                    <asp:Label runat="server" ID="userlabel" style="  color:white; "></asp:Label>
+                </div>          
+            </td>
+            
+        </tr>
+        
+            <tr style="width:1100px">
+                <td colspan="3">
+                   
+                    <asp:ContentPlaceHolder id="body" runat="server">
+          
+         </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            
+            <tr style="width:1100px;background-color:black;text-align:center;color:#ffffff">
+                <td colspan="3" class="auto-style1">
+                    YBU GAZENET
+                </td>
+            </tr>
+    </table>
+        
+       
+    </form>
+    <footer>
+        
+    </footer>
+</body>
+</html>
