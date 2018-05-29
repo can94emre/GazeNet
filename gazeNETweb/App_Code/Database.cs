@@ -219,7 +219,9 @@ public class Database
 
         if (type.Equals("Visual")) {
             while (reader.Read())
+
             {
+
 
                 byte[] img = (byte[])reader["IMG"];
                 if (img == null)
@@ -227,6 +229,8 @@ public class Database
 
                 }
                 else
+
+
                 {
                     MemoryStream memoryStream = new MemoryStream(img);
                     Image image = Image.FromStream(memoryStream);

@@ -7,7 +7,7 @@
 
     <asp:Label runat="server" ID="q_text"></asp:Label>
 
-   <asp:Image runat ="server" ID="choice1"></asp:Image>
+   <asp:Image runat ="server" ID="choice1"  ></asp:Image>
 
 
 </asp:Content>
